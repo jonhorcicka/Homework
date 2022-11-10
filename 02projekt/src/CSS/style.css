@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tahoma';
+    
+}
+
+.container {
+    max-width: 1366px;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* <!--Hlavni blok --> */
+
+.top-header {
+    padding-top: 0px;
+    padding-bottom: 170px;
+
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.main-text{
+    width: 50%;
+    color: #32325f;
+}
+
+.main-image {
+    width: 50%;
+    padding-top: 140px;
+    padding-left: 100px;
+}
+
+.subtitle {
+    display: block;
+    margin-bottom: 41px;
+    color: #000000;
+    font-family: Tahoma;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.title {
+    color: #000000;
+    font-family: Tahoma;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: auto;
+}
+
+.desc {
+    margin-bottom: 50px;
+    color: #000000;
+    font-family: Tahoma;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    width: 521px;
+    height: 95px;
+}
+
+.price {
+    font-family: Tahoma;
+    display: block;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 55px;
+    color: #313131;
+}
+
+.buttons {
+    margin-top: 50px;
+}
+
+.btn {
+    font-family: Tahoma;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    box-shadow: 0 3px 6px rgba(173, 173, 173, 0.16);
+    border-radius: 5px;
+    margin-right: 30px;
+}
+
+
+.blue {
+    background-color: #4572d7;
+    padding: 22px 66px 22px 64px;
+    border-radius: 5px;
+    border: 1px solid #4572d7;
+}
+
+.white {
+    background-color: #ffffff;
+    color: #5981db;
+    border-radius: 5px;
+    border: 2px solid #4572d7;
+    padding: 22px 74px 22px 76px;
+}
+
+/* <!--O shopping --> */
+
+.about {
+    padding: 90px 150px 145px 180px;
+    background-color: #f2f2f2;
+}
+
+.about-subheadline {
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 15px;
+    color: #525f7f;
+}
+
+.about-headline {
+    color: #333333;
+    font-family: Tahoma;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 90px;
+    text-align: center;
+}
+
+
+.icon{
+    height: 60px;
+    display: flex;
+}
+.about-item span {
+    display: block;
+    line-height: 1.2;
+    color: #838383;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 400;  
+}
+
+.about-wrap {
+    display: flex;
+}
+
+.about-item {
+    width: 25%;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.about-item img {
+    /* margin-bottom: 25px; */
+    margin: auto 0;
+}
+
+/* <!-- Knihu si objednali --> */
+
+.people-headline {
+    color: #333333;
+    font-family: Tahoma;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.people-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 26px;
+    row-gap: 36px;
+    justify-content: center;
+    }
+
+.people-item img {
+    width: 261px;
+    height: 261px;
+    align-items: center;
+}    
+
+.people {
+    padding-bottom: 112px;
+    padding-top: 50px;
+}
+
+/* <!-- Mobilní verze --> */
+@media screen and (max-width: 767px){
+
+   /* <!--Hlavni blok --> */
+
+    .top-header {
+    padding: 20px 0 70px 0;
+   }
+
+    .title {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .subtitle {
+        text-align: center;
+    }
+
+    .main {
+        flex-direction: column-reverse;
+    }
+
+    .main-text {
+        min-width: 100%;
+    }
+
+    .main-image {
+        width: auto;
+        align-items: center;
+        padding: 0;
+    }
+
+    .main-image img {
+        width: 100%;
+        align-items: center;
+    }
+    
+    .desc {
+        display: block;
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+
+
+    .price {
+        text-align: left;
+    }
+
+    .buttons {
+        display: flex;
+        width: 100%;
+        margin: 10px;
+        flex-flow: column;
+        row-gap: 7px;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    /* <!-- Knihu si objednali --> */
+
+    .about {
+        padding: 50px 0;
+    }
+
+    .about-headline {
+        margin: 0 0 50px;
+    }
+
+    .about-wrap {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .about-item {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin-bottom: 20px;
+        height: auto; 
+    }
+
+    /* <!-- Knihu si objednali --> */
+
+    .people {
+        padding: 50px 0 50px;
+    }
+
+    .people-wrap {
+        flex-flow: column;
+        align-items: center;
+    }
+      
+}
+
+
+
+
